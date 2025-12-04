@@ -1,11 +1,9 @@
 body {
     margin: 0;
     margin-top: 0px;
-    background-color: rgb(49, 49, 49);
-}
-
-header {
-    background-color: rgb(240, 240, 240);
+    background-color: #ececec;
+    color: rgb(0, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 ul {
@@ -13,9 +11,13 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    background-color: rgb(37, 37, 37);
+    box-shadow: 1px 1px 10px;
 }
 
 li {
     text-decoration:none;
     text-align:center;
     padding: 20px;
+    color: #ffffff;
+}
