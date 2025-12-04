@@ -52,6 +52,22 @@
             }else if(key == 40 && d != "UP"){
                 d = "DOWN";
             }
+        function draw(
+            contenxt.clearReact(0,0,400,400)
+            for(let i = 0; i < snake.length; i++){
+                context.fillStyle = ( i == 0 )? "green" : "white";
+                context.fillRect(snake[i].x, snake[i].y, box, box);
+
+                context.strokeStyle = "red";
+                context.strokeRect(snake[i].x, snake[i].y, box, box);
+            }
+
+            context.fillStyle = "orange";
+            context.fillRect(food.x, food.y, box, box);
+        )
+
+        let snakeX = snake[0].x;
+        let snakeY = snake[0].y;
         }
     </script>
 </body>
