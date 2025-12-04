@@ -4,13 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="../CSS/index.css" rel="stylesheet" />
-    <script src="../JS/snake.js" defer></script>
     <style>
-        canvas {
-            border: 1px solid black;
-            background-color: #f0f0f0;
-        }
+        border:2px solid black;
     </style>
     
 </head>
@@ -18,57 +13,5 @@
 
 
     <canvas width="400" height="400"></canvas>
-    
-    <script>
-        const canvas = document.querySelector("canvas");
-        const context = canvas.getContext("2d");
-
-        let box = 20;
-
-        let snake = [];
-        snake[0] = {
-            x: 10 * box,
-            y: 10 * box
-        };
-        let food = {
-            x: Math.floor(Math.random() * 15 + 1) * box,
-            y: Math.floor(Math.random() * 15 + 1) * box
-        }
-
-        let score = 0;
-
-        let d 
-
-        document.addEventListener("keydown", direction);
-
-        function direction(event){
-            let key = event.keyCode;
-            if( key == 37 && d != "RIGHT"){
-                d = "LEFT";
-            }else if(key == 38 && d != "DOWN"){
-                d = "UP";
-            }else if(key == 39 && d != "LEFT"){
-                d = "RIGHT";
-            }else if(key == 40 && d != "UP"){
-                d = "DOWN";
-            }
-        function draw(
-            contenxt.clearReact(0,0,400,400)
-            for(let i = 0; i < snake.length; i++){
-                context.fillStyle = ( i == 0 )? "green" : "white";
-                context.fillRect(snake[i].x, snake[i].y, box, box);
-
-                context.strokeStyle = "red";
-                context.strokeRect(snake[i].x, snake[i].y, box, box);
-            }
-
-            context.fillStyle = "orange";
-            context.fillRect(food.x, food.y, box, box);
-        )
-
-        let snakeX = snake[0].x;
-        let snakeY = snake[0].y;
-        }
-    </script>
 </body>
 </html>
